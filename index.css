@@ -261,7 +261,7 @@ body{
     font-size:16px;
 }
 
-#work {
+#work, #contact {
     margin:2vh 0px;
     padding:4vh 0px !important;
 }
@@ -373,8 +373,26 @@ body{
 }
 
 ::selection {
-    color:var(--bg-color); 
+    color:var(--bg-color);
     background:var(--text-color);
+}
+
+.details {
+widows: 100%;
+text-align: left;
+}
+
+.details a {
+font-size: 20px;
+color: #bbbbbb;
+margin-right:8vw;
+margin-left:0px;
+border-radius:50%;
+transition:0.4s ease-in-out;
+}
+
+.details a:hover {
+    color: #282828;
 }
 
 @media (max-width: 800px){
@@ -441,6 +459,15 @@ body{
     }
     #blog p {
         margin:2vh 0px;
+	}
+	.details {
+        text-align:center;
+    }
+    .details a {
+        font-size:20px;
+        margin:0px 3vw;
+        padding:14px;
+        text-align:center;
     }
 }
 
