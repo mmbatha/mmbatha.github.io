@@ -3,9 +3,14 @@
   "username": "mmbatha",
   "name": "Monde M",
   "userimg": "https://avatars2.githubusercontent.com/u/35221544?v=4",
-  "sort": "created",
+  "sort": "star",
   "order": "desc",
   "includeFork": true,
-  "theme": "dark.css"
+  "theme": "dark.css",
+  "types": [
+   "all"
+  ],
+  "twitter": "Mbathason",
+  "linkedin": "shortm-za"
  }
 ]

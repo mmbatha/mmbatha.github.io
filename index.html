@@ -6,28 +6,155 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
     <link rel="stylesheet" href="index.css">
-<link rel="icon" href="https://avatars2.githubusercontent.com/u/35221544?v=4" type="image/png"></head>
+  <link rel="icon" href="https://avatars2.githubusercontent.com/u/35221544?v=4" type="image/png"></head>
 
-<body>
+  <body>
     <div id="loading">
-        <div id="spinner"></div>
+      <div id="spinner"></div>
     </div>
     <div id="profile">
-        <div id="profile_img" style="background: url(https://avatars2.githubusercontent.com/u/35221544?v=4) center;"></div>
-        <div id="username"><span style="display:block;">Monde M</span><a href="https://github.com/mmbatha">@mmbatha</a></div>
-        <div id="userbio" style="display: block;">Curious Web Developer currently exploring Docker and Java.</div>
-        <div id="about">
+      <div id="profile_img" style="background: url(https://avatars2.githubusercontent.com/u/35221544?v=4) center;"></div>
+      <div id="username"><span style="display:block;">Monde M</span><a href="https://github.com/mmbatha">@mmbatha</a></div>
+      <div id="userbio" style="display: block;">Hey there! Learn all you can and may the code be ever in your favour!</div>
+      <div id="about">
                 <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
                 <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
                 <span style="display:none;"><i class="fas fa-link"></i> &nbsp; <a href=""></a></span>
-                <span style="display:none;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; null</span>
-                <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span></div>
+                <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Johannesburg</span>
+                <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
+                <div class="socials">
+				<span style="display: block;">
+				<a href="mailto:monde@technoris.co.za" target="_blank" class="socials"><i class="fab fa-envelope"></i></a></span>
+                <span style="display:block;"><a href="https://www.twitter.com/Mbathason" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.dribbble.com/undefined" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
+                <span style="display:block;"><a href="https://www.linkedin.com/in/shortm-za/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.medium.com/@undefined/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
+                </div>
+                </div>
     </div>
     <div id="display">
-        <div id="work">
-            <h1>Work.</h1>
-            <div class="projects" id="work_section">
+      <div id="work">
+        <h1>Work.</h1>
+        <div class="projects" id="work_section">
+                        <a href="https://github.com/TlStephen2011/fixme" target="_blank">
+                        <section>
+                            <div class="section_title">fixme</div>
+                            <div class="about_section">
+                            <span style="display:block;">Network programming in java</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/42_test" target="_blank">
+                        <section>
+                            <div class="section_title">42_test</div>
+                            <div class="about_section">
+                            <span style="display:block;">I use this repo mostly for testing other projects during peer-to-peer evaluations at WeThinkCode_.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/Bootcamp_CPP" target="_blank">
+                        <section>
+                            <div class="section_title">Bootcamp_CPP</div>
+                            <div class="about_section">
+                            <span style="display:block;">This C++ pool is a must for unlocking object-oriented programming projects in curriculum 42. Here you will discuss the basic concepts of OOP through the specifications of C ++.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C++</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/Bootcamp_PHP" target="_blank">
+                        <section>
+                            <div class="section_title">Bootcamp_PHP</div>
+                            <div class="about_section">
+                            <span style="display:block;">The PHP bootcamp allowed one access to basic technologies of the web.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/Docker" target="_blank">
+                        <section>
+                            <div class="section_title">Docker</div>
+                            <div class="about_section">
+                            <span style="display:block;">First project on the Docker ecosystem .Learn to think in containers for this subject in which you will handle docker binary and create your first containers with Dockerfiles.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Dockerfile</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/Get_the_next_line" target="_blank">
+                        <section>
+                            <div class="section_title">Get_the_next_line</div>
+                            <div class="about_section">
+                            <span style="display:block;">Whether it's a file, standard input, or even a unix socket, one still needs to read content line by line. It is therefore time to present this function, which was essential for a number of my later projects.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/IAmFit" target="_blank">
+                        <section>
+                            <div class="section_title">IAmFit</div>
+                            <div class="about_section">
+                            <span style="display:block;">This Android app uses logs generated by the Veryfit app to CORRECTLY add step, sleep and heart-rate data to the Google Fit API</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/Instagram-wannabe" target="_blank">
+                        <section>
+                            <div class="section_title">Instagram-wannabe</div>
+                            <div class="about_section">
+                            <span style="display:block;">This first project puts one back in the thick of things after the PHP boot-camp: one will have to realise, in PHP, a small Instagram-like site allowing users to create and share photo-montages. One will thus implement, with one's bare hands (the frameworks are prohibited), the basic functionalities encountered on the majority of the sites having a base user.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/Matchmaker" target="_blank">
+                        <section>
+                            <div class="section_title">Matchmaker</div>
+                            <div class="about_section">
+                            <span style="display:block;">This second project introduces one to a more advanced tool to realise one's web applications: the micro-framework. One is invited to create, in the language of one's choice, a dating site. Interactions between users will be at the heart of the project!</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
                         <a href="https://github.com/mmbatha/mmbatha.github.io" target="_blank">
                         <section>
                             <div class="section_title">mmbatha.github.io</div>
@@ -41,11 +168,145 @@
                             </div>
                         </section>
                         </a>
-                        <a href="https://github.com/mmbatha/MatchYa" target="_blank">
+                        <a href="https://github.com/mmbatha/Settings" target="_blank">
                         <section>
-                            <div class="section_title">MatchYa</div>
+                            <div class="section_title">Settings</div>
                             <div class="about_section">
-                            <span style="display:block;">This second project introduces one to a more advanced tool to realise one's web applications: the micro-framework. One is invited to create, in the language of one's choice, a dating site. Interactions between users will be at the heart of the project!</span>
+                            <span style="display:block;">Keeps all my config files and custom settings in one place</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Vim script</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/YouTube-wannabe" target="_blank">
+                        <section>
+                            <div class="section_title">YouTube-wannabe</div>
+                            <div class="about_section">
+                            <span style="display:block;">The last project in its series, the Hypertube project invites one to discover an extremely powerful tool category: MVC frameworks. One will learn how to manipulate an MVC, in the language of one's choice, to make a streaming video site downloaded via the BitTorrent protocol.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a></div>
+      </div>
+      <div id="forks" style="display: block;">
+        <h1>Forks.</h1>
+        <div class="projects" id="forks_section">
+                        <a href="https://github.com/mmbatha/42-subjects" target="_blank">
+                        <section>
+                            <div class="section_title">42-subjects</div>
+                            <div class="about_section">
+                            <span style="display:block;">English subjects of projects at 42</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/android-fit" target="_blank">
+                        <section>
+                            <div class="section_title">android-fit</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/Angular-AlbumStoreProductPage" target="_blank">
+                        <section>
+                            <div class="section_title">Angular-AlbumStoreProductPage</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TypeScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/AspNetCore-StarChartAPI" target="_blank">
+                        <section>
+                            <div class="section_title">AspNetCore-StarChartAPI</div>
+                            <div class="about_section">
+                            <span style="display:block;">Project to create a Starchart Web API using ASP.NET Core.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C#</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/AspNetCore-WishList" target="_blank">
+                        <section>
+                            <div class="section_title">AspNetCore-WishList</div>
+                            <div class="about_section">
+                            <span style="display:block;">Project to create a new ASP.NET Core wishlist application from scratch.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C#</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/azure-cli" target="_blank">
+                        <section>
+                            <div class="section_title">azure-cli</div>
+                            <div class="about_section">
+                            <span style="display:block;">Command-line tools for Azure.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/bottom-navigation-demo" target="_blank">
+                        <section>
+                            <div class="section_title">bottom-navigation-demo</div>
+                            <div class="about_section">
+                            <span style="display:block;">Demo app for the new BottomNavigationView in Android Support library</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/cypress-example-kitchensink" target="_blank">
+                        <section>
+                            <div class="section_title">cypress-example-kitchensink</div>
+                            <div class="about_section">
+                            <span style="display:block;">This is an example app used to showcase Cypress.io testing.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/cypress-todo-example" target="_blank">
+                        <section>
+                            <div class="section_title">cypress-todo-example</div>
+                            <div class="about_section">
+                            <span style="display:block;">Example React App for experimenting with Cypress.io</span>
                             </div>
                             <div class="bottom_section">
                                 <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
@@ -54,37 +315,11 @@
                             </div>
                         </section>
                         </a>
-                        <a href="https://github.com/mmbatha/CamelGrew" target="_blank">
+                        <a href="https://github.com/mmbatha/GNL-1" target="_blank">
                         <section>
-                            <div class="section_title">CamelGrew</div>
+                            <div class="section_title">GNL-1</div>
                             <div class="about_section">
-                            <span style="display:block;">This first project puts one back in the thick of things after the PHP boot-camp: one will have to realise, in PHP, a small Instagram-like site allowing users to create and share photo-montages. One will thus implement, with one's bare hands (the frameworks are prohibited), the basic functionalities encountered on the majority of the sites having a base user.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/mmbatha/Poor_PHP" target="_blank">
-                        <section>
-                            <div class="section_title">Poor_PHP</div>
-                            <div class="about_section">
-                            <span style="display:block;">The PHP bootcamp allowed one access to basic technologies of the web.</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; PHP</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/mmbatha/42_test" target="_blank">
-                        <section>
-                            <div class="section_title">42_test</div>
-                            <div class="about_section">
-                            <span style="display:block;">Used for testing other projects during peer-to-peer evaluations.</span>
+                            <span style="display:none;">undefined</span>
                             </div>
                             <div class="bottom_section">
                                 <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C</span>
@@ -92,179 +327,63 @@
                                 <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
                             </div>
                         </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/hackathon-starter" target="_blank">
+                        <section>
+                            <div class="section_title">hackathon-starter</div>
+                            <div class="about_section">
+                            <span style="display:block;">A boilerplate for Node.js web applications</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/mmbatha/PSAngularUnitTestingCourse" target="_blank">
+                        <section>
+                            <div class="section_title">PSAngularUnitTestingCourse</div>
+                            <div class="about_section">
+                            <span style="display:block;">files &amp; status for my Pluralsight course on Unit Testing</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TypeScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
                         </a></div>
-        </div>
-        <div id="forks" style="display: block;">
-            <h1>Forks.</h1>
-            <div class="projects" id="forks_section">
-                            <a href="https://github.com/mmbatha/GNL-1" target="_blank">
-                            <section>
-                                <div class="section_title">GNL-1</div>
-                                <div class="about_section">
-                                <span style="display:none;">undefined</span>
-                                </div>
-                                <div class="bottom_section">
-                                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C</span>
-                                    <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                    <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                                </div>
-                            </section>
-                            </a>
-                            <a href="https://github.com/mmbatha/android-BluetoothLeGatt" target="_blank">
-                            <section>
-                                <div class="section_title">android-BluetoothLeGatt</div>
-                                <div class="about_section">
-                                <span style="display:none;">undefined</span>
-                                </div>
-                                <div class="bottom_section">
-                                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
-                                    <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                    <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                                </div>
-                            </section>
-                            </a>
-                            <a href="https://github.com/mmbatha/hackathon-starter" target="_blank">
-                            <section>
-                                <div class="section_title">hackathon-starter</div>
-                                <div class="about_section">
-                                <span style="display:block;">A boilerplate for Node.js web applications</span>
-                                </div>
-                                <div class="bottom_section">
-                                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-                                    <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                    <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                                </div>
-                            </section>
-                            </a>
-                            <a href="https://github.com/mmbatha/cypress-todo-example" target="_blank">
-                            <section>
-                                <div class="section_title">cypress-todo-example</div>
-                                <div class="about_section">
-                                <span style="display:block;">Example React App for experimenting with Cypress.io</span>
-                                </div>
-                                <div class="bottom_section">
-                                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-                                    <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                    <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                                </div>
-                            </section>
-                            </a>
-                            <a href="https://github.com/mmbatha/cypress-example-kitchensink" target="_blank">
-                            <section>
-                                <div class="section_title">cypress-example-kitchensink</div>
-                                <div class="about_section">
-                                <span style="display:block;">This is an example app used to showcase Cypress.io testing.</span>
-                                </div>
-                                <div class="bottom_section">
-                                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
-                                    <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                    <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                                </div>
-                            </section>
-                            </a>
-                            <a href="https://github.com/mmbatha/PSAngularUnitTestingCourse" target="_blank">
-                            <section>
-                                <div class="section_title">PSAngularUnitTestingCourse</div>
-                                <div class="about_section">
-                                <span style="display:block;">files &amp; status for my Pluralsight course on Unit Testing</span>
-                                </div>
-                                <div class="bottom_section">
-                                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TypeScript</span>
-                                    <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                    <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                                </div>
-                            </section>
-                            </a>
-                            <a href="https://github.com/mmbatha/AspNetCore-WishList" target="_blank">
-                            <section>
-                                <div class="section_title">AspNetCore-WishList</div>
-                                <div class="about_section">
-                                <span style="display:block;">Project to create a new ASP.NET Core wishlist application from scratch.</span>
-                                </div>
-                                <div class="bottom_section">
-                                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C#</span>
-                                    <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                    <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                                </div>
-                            </section>
-                            </a>
-                            <a href="https://github.com/mmbatha/AspNetCore-StarChartAPI" target="_blank">
-                            <section>
-                                <div class="section_title">AspNetCore-StarChartAPI</div>
-                                <div class="about_section">
-                                <span style="display:block;">Project to create a Starchart Web API using ASP.NET Core.</span>
-                                </div>
-                                <div class="bottom_section">
-                                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C#</span>
-                                    <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                    <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                                </div>
-                            </section>
-                            </a>
-                            <a href="https://github.com/mmbatha/Angular-AlbumStoreProductPage" target="_blank">
-                            <section>
-                                <div class="section_title">Angular-AlbumStoreProductPage</div>
-                                <div class="about_section">
-                                <span style="display:none;">undefined</span>
-                                </div>
-                                <div class="bottom_section">
-                                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TypeScript</span>
-                                    <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                    <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                                </div>
-                            </section>
-                            </a>
-                            <a href="https://github.com/mmbatha/azure-cli" target="_blank">
-                            <section>
-                                <div class="section_title">azure-cli</div>
-                                <div class="about_section">
-                                <span style="display:block;">Command-line tools for Azure.</span>
-                                </div>
-                                <div class="bottom_section">
-                                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-                                    <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                    <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                                </div>
-                            </section>
-                            </a></div>
-        </div>
-        <div id="blog_section">
-            <h1>Blog.</h1>
-            <div id="blogs"></div>
-        </div>
-	<div id="contact">
-		<h1>Contact.</h1>
-		<div class="details" style="text-align:left;">
-			<a href="mailto:monde@technoris.co.za"><i class="far fa-envelope what-second-div"></i></a>
-			<a href="https://github.com/mmbatha" target="_blank"><i class="fab fa-github what-second-div"></i></a>
-			<a href="https://linkedin.com/in/shortm-za" target="_blank"><i class="fab fa-linkedin what-second-div"></i></a>
-			<a href="https://twitter.com/mbathason" target="_blank"><i                                                          class="fab fa-twitter what-second-div"></i></a>
-		</div>
-	</div>
-	<div id="footer">
-            <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
-        </div>
+      </div>
+      <div id="blog_section">
+        <h1>Blog.</h1>
+        <div id="blogs"></div>
+      </div>
+      <div id="footer">
+        <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+      </div>
     </div>
     <script type="text/javascript">
-        setTimeout(function () {
-            document.getElementById("loading").classList.add("animated");
-            document.getElementById("loading").classList.add("fadeOut");
-            setTimeout(function () {
-                document.getElementById("loading").classList.remove("animated");
-                document.getElementById("loading").classList.remove("fadeOut");
-                document.getElementById("loading").style.display = "none";
-            }, 800);
-        }, 1500);
-        $.getJSON("blog.json", function (blog) {
-            blog = blog || [];
-            if (blog.length == 0) {
-                return document.getElementById("blog_section").style.display = "none";
-            }
-            for (var i = 0; i < blog.length; i++) {
-                $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
+      setTimeout(function() {
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function() {
+          document.getElementById("loading").classList.remove("animated");
+          document.getElementById("loading").classList.remove("fadeOut");
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      }, 1500);
+      $.getJSON("blog.json", function(blog) {
+        blog = blog || [];
+        if (blog.length == 0) {
+          return (document.getElementById("blog_section").style.display =
+            "none");
+        }
+        for (var i = 0; i < blog.length; i++) {
+          $("#blogs").append(`
+            <a href="./blog/${blog[i].url_title}/">
                 <section>
-                    <img src="${blog[i].top_image}">
+                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
                     <div class="blog_container">
                         <div class="section_title">${blog[i].title}</div>
                         <div class="about_section">
@@ -274,18 +393,37 @@
                 </section>
             </a>
             `);
-            }
-        }).fail(function () {
-            return document.getElementById("blog_section").style.display = "none";
-        });
+        }
+      }).fail(function() {
+        return (document.getElementById("blog_section").style.display = "none");
+      });
     </script>
 
-    <script type="text/javascript">
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('service-worker.js');
-            });
-        }
+    <script>
+      const magicProjectsGrid = new MagicGrid({
+        container: "#work_section",
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 2,
+        useTransform: true
+      });
+
+      const magicForksGrid = new MagicGrid({
+        container: "#forks_section",
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 2,
+        useTransform: true
+      });
+
+      $("document").ready(() => {
+        magicProjectsGrid.listen();
+        magicForksGrid.listen();
+      });
     </script>
 
 
