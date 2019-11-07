@@ -7,4 +7,4 @@ Install gitfolio
 
 # Build site
 Build your site using the following command:
-`gitfolio build mmbatha --fork --sort star --order desc --theme dark --twitter Mbathason --linkedin shortm-za`
+`gitfolio build mmbatha --sort star --theme dark --twitter Mbathason --linkedin shortm-za`
